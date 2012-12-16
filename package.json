@@ -1,0 +1,7 @@
+{"name":"async-js-demo","description":"demo for async js","version":"0.0.1","dependencies":{
+    "underscore": "*",
+    "backbone": "*",
+    "mocha": "*",
+    "should": "*"
+    }
+}
