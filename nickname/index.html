@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>nickname</title>
+    <link media="all" href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link media="all" href="css/bootstrap-responsive.min.css" type="text/css" rel="stylesheet" />
+    <script src="js/jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row span4 offset4">
+    <form class="well form-inline" action="javascript:;">
+      <input type="text" class="input-small" id="year" placeholder="year" name="year">
+      <input type="text" class="input-small" id="month" placeholder="month" name="month">
+      <button type="submit" class="btn" id="go">提交</button>
+    </form>
+  </div>
+  <div class="row span4 offset4">
+    <h3>说明:</h3>
+    <ol>
+      <li>2011.5-2013.2, 从E开始,到Z为止</li>
+      <li>2013.3开始,从圆周率小数点开始,每次取2个数字,如果数字小于26,则为数字对应字母表中的字母(A对应1,B对应2,以此类推..)</li>
+      <li>如果数字大于26,则取1位数字,则为此数字对应字母表中的字母</li>
+      <li>名字是大写还是小写,看当时的心情</li>
+    </ol>
+  </div>
+  <div class="row span4 offset4">
+    <h1>本月的昵称是: </h1>
+    <h1 id='now'></h1>
+  </div>
+</div>
+</body>
+</html>
