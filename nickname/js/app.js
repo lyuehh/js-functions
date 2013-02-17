@@ -6,7 +6,6 @@ $(function() {
     // 1 A 65
     // 2 B 66
     // ...
-    console.log(n);
     if(n < 1 || n > 26) {
       throw 'n must between 1 and 26, which is now ' + n;
     }
@@ -103,8 +102,12 @@ $(function() {
       return "2011年只有5月份以后的";
     }
 
-    if(y >= 2078 && m > 9) {
+    if(y > 2078) {
       return '只能查找2011年5月 到 2078年9月';
+    } else if(y === 2078) {
+      if(m > 9) {
+        return '只能查找2011年5月 到 2078年9月';
+      }
     }
 
     if(y === 2011 || y === 2012) {
